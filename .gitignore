@@ -4,3 +4,5 @@ bacup.ipynb
 .ipynb_checkpoints/01.Introduction-checkpoint.ipynb
 
 .ipynb_checkpoints/Running Code-checkpoint.ipynb
+
+*.html
