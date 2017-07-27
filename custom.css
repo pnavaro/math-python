@@ -137,9 +137,6 @@ body {
   line-height: 1.2em;
   vertical-align: top; }
 
-.reveal small * {
-  vertical-align: top; }
-
 .reveal a {
   color: firebrick;
   text-decoration: none;
@@ -176,11 +173,3 @@ body {
   color: red;
   border-color: #00008B;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
-
-.reveal .controls .navigate-right {
-  color: darkred;
-  left: 74px;
-  top: 42px;
-  border-left-width: 22px;
-  border-left-color: #000; }
-
