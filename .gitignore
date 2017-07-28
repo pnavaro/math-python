@@ -1,3 +1,6 @@
 bacup.ipynb
 .ipynb_checkpoints/
 *.html
+fibo.py
+
+__pycache__/fibo.cpython-36.pyc
