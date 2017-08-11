@@ -34,3 +34,7 @@ cython_omp.cpython-36m-darwin.so
 cython_omp.pyx
 
 setup.py
+
+a.out
+
+integral_f_c.c
