@@ -1,4 +1,3 @@
-
 void my_dgemm( int m, int n, int k, 
               double a[m][n], double b[n][k], float c[m][k] )
 {
