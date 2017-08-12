@@ -38,3 +38,5 @@ setup.py
 a.out
 
 integral_f_c.c
+
+examples/
