@@ -41,3 +41,7 @@ Makefile
 mapper.py
 
 reducer.py
+
+cython_f_example.o
+
+cython_f_example.so
