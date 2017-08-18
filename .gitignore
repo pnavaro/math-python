@@ -47,3 +47,5 @@ cython_f_example.o
 cython_f_example.so
 
 data/test.xls
+
+data/pandas_nb.h5
