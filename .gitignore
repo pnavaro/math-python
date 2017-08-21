@@ -49,3 +49,7 @@ cython_f_example.so
 data/test.xls
 
 data/pandas_nb.h5
+
+ghostdriver.log
+
+bokeh_example.png
