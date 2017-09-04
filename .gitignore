@@ -50,3 +50,5 @@ ipython_cell_input.py
 data/nycflights/
 .prep.py.swp
 data/json/
+
+mr_word_count.py
