@@ -60,3 +60,7 @@ spark_wordcount.py
 mr_spark_word_count.py
 
 mr_most_used_word.py
+
+lp_results.txt
+
+*.so
