@@ -59,7 +59,5 @@ lp_results.txt
 *.so
 __pycache__/scrabble.cpython-36.pyc
 .eggs
-
 pi_approximate_pythran.cpp
-
 scrabble.py
