@@ -61,3 +61,5 @@ __pycache__/scrabble.cpython-36.pyc
 .eggs
 pi_approximate_pythran.cpp
 scrabble.py
+
+my_plots.png
