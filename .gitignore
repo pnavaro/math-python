@@ -64,3 +64,9 @@ scrabble.py
 my_plots.png
 pi_approximate_pythran.py
 data/minute/
+*.pyc
+container.c
+*.o
+testcont.c
+testcont.pyx
+container.pyx
