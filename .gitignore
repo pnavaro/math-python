@@ -76,3 +76,4 @@ norme.f
 norme.f90
 
 vect.cpython-36m-darwin.so.dSYM/Contents/Info.plist
+mylapackmodule.c
