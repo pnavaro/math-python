@@ -22,5 +22,5 @@ cd math-python
 ```
 
 Pour les personnes n'ayant pas de distribution python sur leur
-poste, je leur recommande d’installer [Miniconda]((https://conda.io/miniconda.html) avec Python 3.6
+poste, je leur recommande d’installer [Miniconda](https://conda.io/miniconda.html) avec Python 3.6
 
