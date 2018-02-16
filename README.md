@@ -1,4 +1,6 @@
-Projet pour les membres du groupe math-python.
+# Projet pour les membres du groupe math-python.
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pnavaro/math-python/master)
 
 J'y dépose mes supports et les infos techniques.
 Ce site projet sera utilisé également pour communiquer.
@@ -23,4 +25,3 @@ cd math-python
 
 Pour les personnes n'ayant pas de distribution python sur leur
 poste, je leur recommande d’installer [Miniconda](https://conda.io/miniconda.html) avec Python 3.6
-
