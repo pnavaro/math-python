@@ -83,3 +83,5 @@ scrabble.cpp
 sample.txt
 
 multiply.sh
+
+*.log
