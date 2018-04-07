@@ -6,3 +6,4 @@ dependencies:
   - jupyter_contrib_nbextensions
   - lorem 
   - rise
+  - autopep8
