@@ -3,6 +3,5 @@ channels:
   - defaults
 dependencies:
   - python>=3.6
-  - numpy
-  - scipy
+  - jupyter_contrib_nbextensions
   - lorem 
