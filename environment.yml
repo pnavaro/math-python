@@ -1,5 +1,11 @@
 name: math-python
 channels:
   - defaults
+  - conda-forge
+  - damianavila82
 dependencies:
   - python>=3.6
+  - jupyter_contrib_nbextensions
+  - lorem 
+  - rise
+  - autopep8
