@@ -4,7 +4,7 @@ u_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 def cipher( text, shift):
     crypted_text = ""
     for c in text:
-        for (i, l), u in zip(enumerate(l_alphabet),u_alphabet):
+        for i, (l, u) in enumerate(zip(l_alphabet,u_alphabet):
             if c == l:
                 crypted_text += l_alphabet[(i+shift)%26]
             elif c == u:
