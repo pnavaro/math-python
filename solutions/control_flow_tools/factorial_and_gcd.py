@@ -3,10 +3,14 @@ def factorial(n):
     if n == 0:
         return 1
     else:
-        return n * factorial(n-1)
-    
-def gcd(x, y):
-    if x == 0: return y
-    else : return gcd(y % x, x)
+        return n * factorial(n - 1)
 
-print(factorial(5), gcd(12,16))
+
+def gcd(x, y):
+    if x == 0:
+        return y
+    else:
+        return gcd(y % x, x)
+
+
+print(factorial(5), gcd(12, 16))

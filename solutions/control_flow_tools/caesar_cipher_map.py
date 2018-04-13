@@ -1,19 +1,22 @@
-def cipher( text, key ):
+def cipher(text, key):
     l_alphabet = "abcdefghijklmnopqrstuvwxyz"
     u_alphabet = l_alphabet.upper()
 
-    def shift( c ):
+    def shift(c):
         if c.islower():
-            return l_alphabet[(l_alphabet.index(c)+key)%26]
+            return l_alphabet[(l_alphabet.index(c) + key) % 26]
         else:
-            return u_alphabet[(u_alphabet.index(c)+key)%26]
+            return u_alphabet[(u_alphabet.index(c) + key) % 26]
 
     return map(shift, text)
 
-print(*cipher("Python",5))
 
-def plain( text, key):
-    return cipher( text, -key)
+crypted_text = cipher("Python", 5)
+print(*crypted_text)
 
-print(*plain(cipher("Python",5),5))
 
+def plain(text, key):
+    return cipher(text, -key)
+
+
+print(*plain(cipher("Python", 5), 5))

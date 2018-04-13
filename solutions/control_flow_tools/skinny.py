@@ -1,8 +1,19 @@
 def reverse(n):
     return int(str(n)[::-1])
 
-def skinny(N):
-    for n in range(10,N):
-        if reverse(n**2)==reverse(n)**2 and n != reverse(n):
 
-print(skinny(200))
+def skinny(n):
+    """
+    Non palindromic skinny numbers
+    :param n:
+    :return: a list with n first numbers
+    """
+    res = []
+    for m in range(10, n):
+        if reverse(m ** 2) == reverse(m) ** 2 and m != reverse(m):
+            res.append(m)
+    return res
+
+
+if __name__ == "__main__":
+    print(skinny(200))

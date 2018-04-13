@@ -87,3 +87,17 @@ multiply.sh
 *.log
 john.json
 hello.py
+
+.idea/dictionaries/navaro.xml
+
+.idea/encodings.xml
+
+.idea/math-python.iml
+
+.idea/misc.xml
+
+.idea/modules.xml
+
+.idea/vcs.xml
+
+.idea/workspace.xml

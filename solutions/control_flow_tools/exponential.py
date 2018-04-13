@@ -1,20 +1,12 @@
-n = 50
-e = 0.
-fact = 1.
-for i in range(n):
-    e += 1/fact
-    fact *= i+1
-print(e)
-
-def exponential(x, n=50):
-    e = 0.
+def exponential(x, terms=50):
+    exp = 0.
     power = 1.
     fact = 1.
-    for i in range(n):
-        e += power/fact
+    for i in range(terms):
+        exp += power / fact
         power *= x
-        fact *= i+1
-    return e
+        fact *= i + 1
+    return exp
+
 
 print(exponential(1))
-

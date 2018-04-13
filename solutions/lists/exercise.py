@@ -1,12 +1,12 @@
 s = "python LILLE 2018"
-l = s.split(" ")
-print(l)
-l = l[:2] + ["april", 10] + l[2:]
-print(l)
-l[0] = l[0].capitalize()
-print(l)
-d = dict(course=l[0], month=l[2], day=l[3], year=l[4])
+res = s.split(" ")
+print(res)
+res = res[:2] + ["april", 10] + res[2:]
+print(res)
+res[0] = res[0].capitalize()
+print(res)
+d = dict(course=res[0], month=res[2], day=res[3], year=res[4])
 print(d.keys)
 print(d.items())
-d["place"] = l[1]
+d["place"] = res[1]
 print(d)

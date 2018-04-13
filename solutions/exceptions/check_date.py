@@ -7,13 +7,14 @@ def check_date(date):
     if 12 < m or m < 1:  # m in [1,12]
         return False
 
-    if y%400==0 or (y%4==0 and y%100!=0): # leap year
+    if y % 400 == 0 or (y % 4 == 0 and y % 100 != 0):  # leap year
         months[1] = 29
 
-    if months[m-1] < d or d < 1:
+    if months[m - 1] < d or d < 1:
         return False
 
     return True
+
 
 while True:
     try:

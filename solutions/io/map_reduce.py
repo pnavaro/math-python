@@ -1,16 +1,17 @@
-def words(file):
+def words(textfile):
     """ Parse a file and returns a sorted list of words """
-    with open(file) as f:
-        text = f.read()
+    with open(textfile) as file:
+        read_text = file.read()
 
-    return sorted(text.lower().replace('.','').split())
+    return sorted(read_text.lower().replace('.', '').split())
 
-def reduce ( words ):
+
+def reduce(word_sorted_list):
     """ Count the number of occurences of a word in list
     and return a dictionary """
     current_word = None
     result = {}
-    for word in words:
+    for word in word_sorted_list:
         if current_word is None:
             current_word = word
             result[word] = 0  # Add the first word in result
@@ -24,9 +25,11 @@ def reduce ( words ):
 
     return result
 
+
 if __name__ == '__main__':
     from lorem import text
-    with open('sample.txt','w') as f:
+
+    with open('sample.txt', 'w') as f:
         f.write(text())
 
     words('sample.txt')

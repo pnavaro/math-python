@@ -1,5 +1,35 @@
 from operator import itemgetter
 
+
+class GroceryItem:
+    """ Grocery list item """
+
+    def __init__(self, name, price_without_cut, cut_percentage, category,
+                 vat_percentage, quantity, ingredients):
+        self.name = name
+        self.price_without_cut = price_without_cut
+        self.cut_percentage = cut_percentage
+        self.category = category
+        self.vat_percentage = vat_percentage
+        self.quantity = quantity
+        self.ingredients = ingredients
+
+    def get_total_price(self):
+        res = self.price_without_cut * (1 + self.vat_percentage / 100) * (1 - self.cut_percentage / 100) * self.quantity
+        return round(res, 2)
+
+    def get_total_vat(self):
+        res = self.price_without_cut * self.vat_percentage / 100 * (1 - self.cut_percentage / 100) * self.quantity
+        return round(res, 2)
+
+    def get_total_cut(self):
+        res = self.price_without_cut * (1 + self.vat_percentage / 100) * self.cut_percentage / 100 * self.quantity
+        return round(res, 2)
+
+    def __repr__(self):
+        return f"{self.name:s} x {self.quantity:d}"
+
+
 class GroceryList:
 
     def __init__(self, *args):
@@ -25,7 +55,7 @@ class GroceryList:
         return sum([a.get_total_price() for a in self.items])
 
     def total_for(self, category):
-        return sum([a.get_total_price() for a in self.items if a.category == category])
+        return round(sum([a.get_total_price() for a in self.items if a.category == category]), 2)
 
     def price_by_category(self):
         res = {}
@@ -37,10 +67,10 @@ class GroceryList:
         return res
 
     def total_vat(self):
-        return sum([a.get_total_vat() for a in self.items])
+        return round(sum([a.get_total_vat() for a in self.items]), 2)
 
     def total_cut(self):
-        return sum([a.get_total_cut() for a in self.items])
+        return round(sum([a.get_total_cut() for a in self.items]), 2)
 
     def top_ingredients(self, n):
         res = {}
@@ -50,7 +80,7 @@ class GroceryList:
                     res[i] += 1
                 except KeyError:
                     res[i] = 1
-        return sorted(res, key=itemgetter(1))[:n]
+        return sorted(res.items(), key=itemgetter(1), reverse=True)[:n]
 
     def all_item_names(self):
         return [a.name for a in self.items]
@@ -64,19 +94,25 @@ class GroceryList:
     def __iter__(self):
         yield from self.items
 
+
 if __name__ == "__main__":
 
-    from item import Item
+    beef = GroceryItem("Beef", 12.3, 0, "Meat", 10, 2, ["Beef"])
+    print(beef)
+    print(f"Total cut   : {beef.get_total_cut():.2f} \u20ac ")
+    print(f"Total price : {beef.get_total_price():.2f} \u20ac ")
+    print(f"Total VAT   : {beef.get_total_vat():.2f} \u20ac ")
+
     shopping_list = GroceryList(
-    Item("Beef", 12.3, 0, "Meat", 10, 2, ["Beef"]),
-    Item("Pork", 7.99, 5, "Meat", 10, 1, ["Pork"]),
-    Item("Tomato Sauce", 2, 0, "Can", 10, 3, ["Tomato", "Water", "Salt", "Sugar", "Preservatives"]),
-    Item("Beans", 3.5, 10, "Can", 10, 5, ["Beans", "Water", "Salt", "Preservatives"]),
-    Item("Tuna", 1.50, 0, "Can", 20, 4, ["Fish", "Oil", "Salt", "Water", "Preservatives"])
-)
+        GroceryItem("Beef", 12.3, 0, "Meat", 10, 2, ["Beef"]),
+        GroceryItem("Pork", 7.99, 5, "Meat", 10, 1, ["Pork"]),
+        GroceryItem("Tomato Sauce", 2, 0, "Can", 10, 3, ["Tomato", "Water", "Salt", "Sugar", "Preservatives"]),
+        GroceryItem("Beans", 3.5, 10, "Can", 10, 5, ["Beans", "Water", "Salt", "Preservatives"]),
+        GroceryItem("Tuna", 1.50, 0, "Can", 20, 4, ["Fish", "Oil", "Salt", "Water", "Preservatives"])
+    )
 
     print(shopping_list.items)
-    print(len(shopping_list))
+    print(f"Number of Grocery Items : {len(shopping_list)}")
     print(shopping_list[::-1])
     for item in shopping_list:
         print(f"{item} = {item.get_total_price():7.2f} \u20ac)")
