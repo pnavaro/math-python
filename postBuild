@@ -1,3 +1,4 @@
 jupyter contrib nbextension install --user
+jupyter nbextension enable rise/main
 jupyter nbextension enable exercise2/main
 jupyter nbextension enable code_prettify/autopep8

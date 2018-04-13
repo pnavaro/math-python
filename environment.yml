@@ -1,8 +1,8 @@
 name: math-python
 channels:
-  - defaults
-  - conda-forge
   - damianavila82
+  - conda-forge
+  - defaults
 dependencies:
   - python>=3.6
   - jupyter_contrib_nbextensions
