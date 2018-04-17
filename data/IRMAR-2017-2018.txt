@@ -49,7 +49,7 @@ Cheverry Christophe +33 2 23 23 58 70 207/1 PR EDP
 Clarenne Adrien +33 2 23 23 75 47 201 DOC PROC-STOC
 Claudon Benoît +33 2 23 23 66 63 731 PR GAN,G&S 
 Clolus Priscilia +33 2 23 23 58 90 215/1 LOG 
-Collin Maryse +33 2 23 23 65 02 704 IR BIBLI 
+Collin Maryse +33 2 23 23 65 02 704 CNRS IR BIBLI 
 Conze Jean-Pierre +33 2 23 23 60 32 317 PE THEO-ERG
 Coquet Francois +33 2 23 23 69 35 120 PR STAT 
 Cornaggia Remi +33 2 23 23 75 38 201 PDOC MECA 
@@ -90,9 +90,9 @@ Fichou Goulwen +33 2 23 23 65 05 609 MC-HDR G&S
 Fontaine Marine +33 2 23 23 58 31 203 DOC ANANUM
 Fourquaux Lionel +33 2 23 23 58 62 619 MC GA 
 Francini Camille +33 2 23 23 71 73 332 DOC THEO-ERG
-Fromont Magalie +33 2 99 05 32 64 R2 MC-HDR STAT
+Fromont Magalie +33 2 99 05 32 64 R2 PR STAT
 Gares Valérie +33 2 23 23 89 48 INSA MC STAT
-Garo Olivier +33 2 23 23 39 57 135 IE INFO 
+Garo Olivier +33 2 23 23 39 57 135 CNRS IE INFO 
 Gelein Brigitte +33 2 99 05 32 65 AGRO DOC STAT
 Giacofci Joyce Madison +33 2 99 14 18 00 R2 MC STAT
 Gordenko Anna +33 2 23 23 68 70 634 DOC GAN 
@@ -101,18 +101,18 @@ Gros Michel +33 2 23 23 58 30 618 CR-HDR GA
 Gruais Isabelle +33 2 23 23 60 50 102 MC-HDR MECA
 Guerin Helene +33 2 23 23 50 90 335 MC PROC-STOC
 Gueudet Ghislaine +33 2 23 23 52 93 232 MC IREM
-Guillemer Marie-Annick +33 2 23 23 66 62 704 AI BIBLI 
-Guiny Aude +33 2 23 23 31 48 132 ADMG ADM
+Guillemer Marie-Annick +33 2 23 23 66 62 704 CNRS AI BIBLI 
+Guiny Aude +33 2 23 23 31 48 132 CNRS TC ADM
 Guiot Emmanuelle +33 2 23 23 60 78 032 ADMG ADM 
 Guirardel Vincent +33 2 23 23 57 95 310 PR THEO-ERG
 Guivarc'h Yves +33 2 23 23 60 31 304 PE THEO-ERG
 Haddou Mounir +33 2 23 23 85 30 INSA PR ANANUM
-Halet Chantal +33 2 23 23 50 41 133 IE ADM
+Halet Chantal +33 2 23 23 50 41 133 IE CNRS ADM
 Haugomat Tristan +33 2 23 23 60 74 334 DOC PROC-STOC
 Héas Patrick +33 2 23 23 66 70 CR STAT 
 Herreman Alain +33 2 23 23 52 60 435 MC-HDR G&S 
 Herve Loic +33 2 23 23 82 37 INSA PR THEO-ERG 
-Herve Dominique +33 2 23 23 66 73 704 TC BIBLI 
+Herve Dominique +33 2 23 23 66 73 704 TC CNRS BIBLI 
 Herzet Cedric +33 2 23 23 66 70 CR MECA 
 Hibon Hélène +33 2 23 23 62 07 332 DOC PROC-STOC
 Hmidi Taoufik +33 2 23 23 50 20 204 MC-HDR EDP
@@ -178,7 +178,7 @@ Moret-Bailly Laurent +33 2 23 23 67 27 602 PE GA
 Morvan Marie +33 2 23 23 66 70 R2 DOC STAT 
 Mourougane Christophe +33 2 23 23 60 67 605 PR G&S 
 Nacry Florent +33 2 23 23 87 23 INSA ATER ANANUM 
-Navaro Pierre +33 2 23 23 43 08 112 IR INFO 
+Navaro Pierre +33 2 23 23 43 08 112 CNRS IR INFO 
 Nguepedja Nankep Mac Jugal +33 2 23 23 64 94 431 DOC PROC-STOC 
 Nguyen Dinh Duong +33 2 23 23 49 11 215 DOC MECA 
 Nguyen Duc Tho +33 2 23 23 75 48 202 DOC EDP 
@@ -196,7 +196,6 @@ Pinier Benoît +33 2 23 23 49 11 215 DOC MECA
 Poinas Arnaud +33 2 23 23 75 54 334 DOC STAT 
 Poly Guillaume +33 2 23 23 65 27 320 MC PROC-STOC 
 Poterie Audrey +33 2 23 23 53 39 301 DOC STAT 
-Potony Leone +33 2 23 23 58 88 215/1 LOG LOG 
 Pravda-Starov Karel +33 2 23 23 52 21 211/1 PR EDP 
 Quarez Ronan +33 2 23 23 58 51 608 MC-HDR G&S 
 Rahmouni Adib +33 2 23 23 60 48 116 MC ANANUM 
@@ -215,7 +214,7 @@ Romagny Matthieu +33 2 23 23 53 47 616 PR GA
 Romaskevich Olga +33 2 23 23 64 69 434 PDOC THEO-ERG 
 Rosello Angelo +33 2 99 05 93 11 DOC ANANUM,PROC-STOC
 Rouffort Clément +33 2 23 23 64 56 202/1 DOC EDP
-Rousseaux Hélène +33 2 23 23 60 04 131 TC ADM
+Rousseaux Hélène +33 2 23 23 60 04 131 CNRS TC ADM
 Rousset Mathias +33 2 23 23 66 70 CR-HDR PROC-STOC 
 Rouviere Laurent +33 2 99 14 18 04 R2 MC STAT 
 Roy Marie-Francoise +33 2 23 23 60 20 633 PE GAE
@@ -223,7 +222,7 @@ Schapira Barbara +33 2 23 23 60 00 305 MC-HDR THEO-ERG
 Schmidt Tobias +33 2 23 23 44 43 604 PR GA
 Sebag Julien +33 2 23 23 58 71 607 PR G&S 
 Seguin Nicolas +33 2 23 23 75 44 109 PR ANANUM 
-Shih Jizhuang +33 2 23 23 58 37 432 PRAG ENS 
+Shih Jizhuang +33 2 23 23 58 37 432 ENS PRAG
 Souto Juan +33 2 23 23 65 09 318 DR GAN,THEO-ERG 
 Tchou Nicoletta +33 2 23 23 58 42 207 MC-HDR EDP 
 Texier-Picard Rozenn +33 2 99 05 93 33 106 MC ANANUM

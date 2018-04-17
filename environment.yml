@@ -9,3 +9,4 @@ dependencies:
   - lorem 
   - rise
   - autopep8
+  - joblib
