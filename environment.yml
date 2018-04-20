@@ -10,3 +10,7 @@ dependencies:
   - rise
   - autopep8
   - joblib
+  - matplotlib
+  - scipy
+  - numpy
+  - pandas
