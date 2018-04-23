@@ -18,7 +18,7 @@ class Polynomial:
             if c != 0:
                 if i == 0:
                     output += " {0:+d} ".format(c)
-		    elif i == 1:
+                elif i == 1:
                     output += " {0:+d}x ".format(c)
                 else:
                     output += " {0:+d}x^{1} ".format(c, i)
