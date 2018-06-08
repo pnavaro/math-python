@@ -16,3 +16,5 @@ dependencies:
   - pandas
   - seaborn
   - dataclasses
+  - sympy
+  - dask
