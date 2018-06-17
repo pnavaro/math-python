@@ -1,4 +1,4 @@
-# Notebooks for Python language initiation.
+# Python language initiation notebooks for mathematicians.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pnavaro/math-python/master)
 

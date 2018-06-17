@@ -1,0 +1,31 @@
+- Fabriquer des animations, faire de la programmation avec GeoGebra...
+- En savoir plus !
+- geom espace term S et 
+ - surfaces z = f(x,y)
+- Je ne pourrai pas être présente le matin, j'arriverai vers 13 h 30.
+- J'utilise GeoGebra pour mes préparations de cours et aussi avec les élèves. Je pense avoir des utilisations très basiques de GeoGebra et j'espère pouvoir découvrir davantage ses possibilités.
+- Utiliser le tableur, faire des  calculs formels, et des figures dans l'espace.
+- Je souhaiterai voir différentes utilisations de GeoGebra pour les fonctions, les listes ( suites définies par récurrence : représentation graphique par exemple...)
+- Pas d'attentes particulières. J'aime bien ce logiciel, mais je pense que je n'utilise que très peu de fonctionnalités....
+ - Je voudrais découvrir des nouvelles fonctions et des nouvelles idées pour enrichir mon utilisation en classe (lycée)
+ - 
+ - Par ailleurs, je prépare l'agrégation interne de maths. Pour les épreuves orales, le jury apprécie que les candidats illustrent leurs leçons par des animations logicielles (géogébra, python, scilab, xcas....). Plus je connaitrais Géogébra, et plus j'aurais des idées pour illustrer mes leçons d'oral. Voilà une deuxième motivation pour venir à cette journée.
+- Acquisitions de nouvelles méthodes éventuellement rapides
+- Les applications de Géogébra pour concevoir les cours, et les activités.
+- Connaitre plus les fonctions de calcul formel, de probabilités et de 3D
+- Utiliser Géogébra pour la géométrie dans l'espace.
+- Géométrie dans l'espace.
+- Utilisation de Géogébra en première et terminale.
+- Travailler sur la géométrie dans l’espace.
+- Étudier ce que l on peut faire d un point de vue pédagogique avec les élèves pour conjecturer/démontrer . Travailler avec des commandes cachées.  Apprendre à utiliser le curseur. Mieux connaître l outil geogebra pour l utiliser dzns la création de mes cours.
+- Me sentir plus à l’aise lorsque je propose une activité geogebra aux élèves.
+- Yes
+- Utilisation des outils "avancés" : calcul formel, tableur 
+ - Lien entre ces outils "avancés"
+ - Possibilité (ou non) d'exploiter une figure geogebra dans une page HTML en tant qu'applet (ce qui était possible dans les anciennes versions en .jar) sans être forcé de l'héberger sur GeogebraTube
+ - Si oui : quelle interaction avec les paramètres prédéfinis ?
+- Voir toutes les fonctionnalités de Géogebra pour faire des animations en classe ou pour utiliser avec les élèves. ( Lycee)
+- Insérer des images.
+ - Créer des animations.
+ - Géogébra 3D
+- Géométrie dans l'espace nivea
