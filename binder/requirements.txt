@@ -1,0 +1,16 @@
+python>=3.6
+jupyter_contrib_nbextensions
+lorem 
+rise
+autopep8
+joblib
+matplotlib
+scipy
+numpy
+pandas
+seaborn
+dataclasses
+sympy
+dask
+tzlocal
+rpy2
