@@ -1,4 +1,4 @@
-python>=3.6
+python==3.6
 jupyter_contrib_nbextensions
 lorem 
 rise
