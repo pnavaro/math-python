@@ -18,4 +18,4 @@ tables
 toolz
 cloudpickle
 graphviz
-python-graphviz
+graphviz-python
