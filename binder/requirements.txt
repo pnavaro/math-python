@@ -17,3 +17,5 @@ xlwt
 tables
 toolz
 cloudpickle
+graphviz
+pygraphviz
