@@ -13,3 +13,4 @@ sympy
 dask
 tzlocal
 rpy2
+xlwt
