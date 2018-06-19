@@ -1,0 +1,13 @@
+language: python
+
+dist: trusty
+
+script: py.test tests.py
+
+install: pip install -r binder/requirements.txt
+
+cache: pip
+cache: ccache
+
+python:
+  - 3.6
