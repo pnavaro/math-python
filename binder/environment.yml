@@ -18,3 +18,5 @@ dependencies:
   - dataclasses
   - sympy
   - dask
+  - tzlocal
+  - rpy2
