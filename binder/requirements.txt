@@ -16,3 +16,4 @@ rpy2
 xlwt
 tables
 toolz
+cloudpickle
