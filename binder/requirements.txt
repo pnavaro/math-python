@@ -1,6 +1,4 @@
-jupyter_contrib_nbextensions
-lorem 
-autopep8
+lorem
 joblib
 matplotlib
 scipy
