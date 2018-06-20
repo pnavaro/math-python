@@ -2,6 +2,7 @@ language: python
 
 dist: trusty
 
+script: python generate_tests.py
 script: py.test tests.py
 
 install: pip install -r binder/requirements.txt

@@ -1,6 +1,5 @@
 jupyter_contrib_nbextensions
 lorem 
-rise
 autopep8
 joblib
 matplotlib
@@ -14,7 +13,11 @@ dask
 tzlocal
 rpy2
 xlwt
-tables
+pytables
 toolz
 cloudpickle
 graphviz
+cython
+memory_profiler
+fortran-magic
+numba
