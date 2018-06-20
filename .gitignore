@@ -116,3 +116,4 @@ tests.py
 notebooks/today/backup.db
 notebooks/today/data.db
 notebooks/remarks.md
+notebooks/.Rhistory
