@@ -3,7 +3,7 @@ language: python
 python:
   - 3.6
 
-dist: bionic
+dist: trusty
 
 install:
   - sudo apt-get -y update
