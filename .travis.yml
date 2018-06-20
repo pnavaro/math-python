@@ -3,11 +3,11 @@ language: python
 python:
   - 3.6
 
-dist: bionic
+dist: trusty
 
 install:
   - sudo apt-get -y update
-  - sudo apt-get -y install gfortran r-cran-nloptr
+  - sudo apt-get -y install gfortran tar gzip
   - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
@@ -16,7 +16,7 @@ install:
   - conda config --add channels conda-forge
   - conda update -q conda
   - conda info -a
-  - conda create -q -n math-python python=$TRAVIS_PYTHON_VERSION
+  - conda create -q -n math-python python=$TRAVIS_PYTHON_VERSION r
   - source activate math-python
   - pip install --upgrade pip
   - pip install --upgrade -r binder/requirements.txt
