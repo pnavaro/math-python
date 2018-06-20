@@ -13,7 +13,7 @@ dask
 tzlocal
 rpy2
 xlwt
-pytables
+tables
 toolz
 cloudpickle
 graphviz
