@@ -16,7 +16,7 @@ install:
   - conda info -a
   - conda create -q -n math-python python=$TRAVIS_PYTHON_VERSION 
   - source activate math-python
-  - conda install --yes --file binder/requirements.txt
+  - conda install --yes --file binder/requirements.txt -c conda-forge
 
 script: 
   - python generate_tests.py
