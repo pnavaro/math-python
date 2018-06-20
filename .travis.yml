@@ -15,10 +15,11 @@ install:
   - conda config --add channels conda-forge
   - conda update -q conda
   - conda info -a
-  - conda create -q -n math-python python=$TRAVIS_PYTHON_VERSION 
+  - conda create -q -n math-python python=$TRAVIS_PYTHON_VERSION r
   - source activate math-python
-  - conda install --yes --file binder/requirements.txt
-  - sudo echo "options(repos = c(CRAN='https://mran.microsoft.com/snapshot/2018-05-02'), download.file.method= 'libcurl')" > /etc/R/Rprofile.site
+  - pip install --upgrade pip
+  - pip install --upgrade -r binder/requirements.txt
+  - sudo echo "options(repos = c(CRAN='https://mran.microsoft.com/snapshot/2018-05-02'), download.file.method= 'libcurl')" > ~/.Rprofile
   - Rscript binder/install.R
 
 script: 
