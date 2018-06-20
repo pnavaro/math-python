@@ -5,7 +5,7 @@ dist: trusty
 script: python generate_tests.py
 script: py.test tests.py
 
-install: pip install -r binder/requirements.txt
+install: conda install --yes --file binder/requirements.txt
 
 cache: pip
 cache: ccache
