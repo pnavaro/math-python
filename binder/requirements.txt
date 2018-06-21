@@ -21,3 +21,6 @@ memory_profiler
 fortran-magic
 numba
 ipywidgets
+h5py
+lxml
+beautifulsoup4
