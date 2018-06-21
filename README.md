@@ -6,7 +6,7 @@
 
 This is a collection of Jupyter notebooks used to teach Python to my collegues at [IRMAR](https://irmar.univ-rennes1.fr)
 
-If you want to participate to monthly sessions, you cann subscribe to the [mailing list](https://listes.univ-rennes1.fr/wws/info/math-python). You need to have a sesame account of [Université de Rennes 1](https://ent.univ-rennes1.fr/).
+If you want to participate to monthly sessions, subscribe to the [mailing list](https://listes.univ-rennes1.fr/wws/info/math-python). You need to have a sesame account of [Université de Rennes 1](https://ent.univ-rennes1.fr/).
 
 
 All instructions are in [first notebook](https://github.com/pnavaro/math-python/blob/master/00.Installation.ipynb).
