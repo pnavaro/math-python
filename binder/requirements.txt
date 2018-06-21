@@ -21,4 +21,3 @@ memory_profiler
 fortran-magic
 numba
 ipywidgets
-nbformat
