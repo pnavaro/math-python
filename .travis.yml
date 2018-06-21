@@ -18,7 +18,7 @@ install:
   - conda update -q conda
   - conda info -a
   - conda create -q -n math-python python=$PYVER
-  - conda install -q -n math-python r r-nloptr nbformat
+  - conda install -q -n math-python r r-nloptr jupyter pytest
   - source activate math-python
   - pip install -r binder/requirements.txt
   - echo "options(repos = c(CRAN='https://mran.microsoft.com/snapshot/2018-05-02'), download.file.method= 'libcurl')" > ~/.Rprofile
