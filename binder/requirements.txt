@@ -24,3 +24,4 @@ ipywidgets
 h5py
 lxml
 beautifulsoup4
+pythran
