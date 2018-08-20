@@ -12,4 +12,6 @@ If you want to participate to monthly sessions, subscribe to the [mailing list](
 - Object : subscribe math-python FirstName LastName 
 - Leave the message body empty
 
-All instructions are in [first notebook](http://nbviewer.jupyter.org/github/pnavaro/math-python/blob/master/notebooks/00.Installation.ipynb).
+All instructions to run programs on your personal computer are in [first notebook](http://nbviewer.jupyter.org/github/pnavaro/math-python/blob/master/notebooks/00.Installation.ipynb).
+
+Pierre
