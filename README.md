@@ -4,7 +4,7 @@
 
 # Python language initiation for mathematicians.
 
-This is a collection of Jupyter notebooks used to teach Python to my collegues at [IRMAR](https://irmar.univ-rennes1.fr)
+This is a collection of Jupyter notebooks for Python workgroup at [IRMAR](https://irmar.univ-rennes1.fr)
 
 If you want to participate to monthly sessions, subscribe to the [mailing list](https://listes.univ-rennes1.fr/wws/info/math-python).
 
