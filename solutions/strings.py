@@ -1,0 +1,6 @@
+str = input("Enter a string : ")
+print(len(str))
+print(str[0] == str[-1])
+print(str.isalpha())
+print(str.islower())
+print(str == str[::-1])

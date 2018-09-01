@@ -23,6 +23,7 @@ class Polynomial:
                 else:
                     output += " {0:+d}x^{1} ".format(c, i)
 
+        if len(output) == 0: return "0"
         return output
 
     def __eq__(self, other):  # override '=='

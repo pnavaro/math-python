@@ -17,10 +17,8 @@ install:
   - conda config --add channels conda-forge
   - conda update -q conda
   - conda info -a
-  - conda create -q -n math-python python=$PYVER
-  - conda install -q -n math-python r r-nloptr jupyter pytest rpy2
-  - source activate math-python
-  - pip install -r binder/requirements.txt
+  - conda create  -q -n math-python python=$PYVER
+  - conda install -q -n math-python --file binder/requirements.txt
   - echo "options(repos = c(CRAN='https://mran.microsoft.com/snapshot/2018-05-02'), download.file.method= 'libcurl')" > ~/.Rprofile
   - Rscript binder/install.R
 
