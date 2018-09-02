@@ -20,6 +20,7 @@ install:
   - conda create  -q -n math-python python=$PYVER
   - conda install -q -n math-python --file binder/requirements.txt
   - echo "options(repos = c(CRAN='https://mran.microsoft.com/snapshot/2018-05-02'), download.file.method= 'libcurl')" > ~/.Rprofile
+  - source activate math-python
   - Rscript binder/install.R
 
 script: 
