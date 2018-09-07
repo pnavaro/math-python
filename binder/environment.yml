@@ -1,0 +1,40 @@
+name: math-python
+channels:
+  - conda-forge
+  - r
+  - defaults
+dependencies:
+  - autopep8
+  - beautifulsoup4
+  - cloudpickle
+  - cython
+  - dask
+  - dataclasses
+  - fortran-magic
+  - graphviz
+  - h5py
+  - ipywidgets
+  - joblib
+  - jupyter
+  - lorem 
+  - lxml
+  - matplotlib
+  - memory_profiler
+  - numba
+  - numpy
+  - pandas
+  - pytables
+  - python-graphviz
+  - pytest
+  - pythran
+  - r
+  - r-nloptr
+  - r-tidyverse
+  - r-irkernel
+  - rpy2
+  - scipy
+  - seaborn
+  - sympy
+  - toolz
+  - tzlocal
+  - xlwt
