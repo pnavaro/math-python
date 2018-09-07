@@ -19,6 +19,7 @@ install:
   - conda info -a
   - conda env create -q -f binder/environment.yml
   - source activate math-python
+  - echo "options(repos = c(CRAN='https://mran.microsoft.com/snapshot/2018-05-02'), download.file.method= 'libcurl')" > ~/.Rprofile
   - Rscript binder/install.R
 
 script: 
