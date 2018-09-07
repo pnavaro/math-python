@@ -1,4 +1,0 @@
-jupyter contrib nbextension install --user
-jupyter nbextension enable exercise2/main
-jupyter nbextension enable code_prettify/autopep8
-Rscript binder/install.R
