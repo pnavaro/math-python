@@ -4,6 +4,7 @@ channels:
   - r
   - defaults
 dependencies:
+  - python=3.6
   - autopep8
   - beautifulsoup4
   - cloudpickle
