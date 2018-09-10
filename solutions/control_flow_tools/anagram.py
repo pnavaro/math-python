@@ -14,7 +14,6 @@ for c1 in s1:
 print(len(s1) == len(s2))
 
 # solution with lists
-# noinspection SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection
-s1 = list("pascal obispo").sort()
-s2 = list("pablo picasso").sort()
+s1 = sorted(list("pascal obispo"))
+s2 = sorted(list("pablo picasso"))
 print(s1 == s2)
