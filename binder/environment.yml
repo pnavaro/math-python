@@ -40,3 +40,4 @@ dependencies:
   - toolz
   - tzlocal
   - xlwt
+  - line_profiler
