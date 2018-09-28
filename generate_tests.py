@@ -1,6 +1,6 @@
 from glob import glob
 
-nbfiles = glob("notebooks/*.ipynb")
+nbfiles = sorted(glob("notebooks_2017/*.ipynb"))
 
 with open("tests.py","w") as f:
     f.write("""\
