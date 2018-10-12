@@ -1,7 +1,7 @@
 .ipynb_checkpoints/
 *.html
 fibo.py
-__pycache__/fibo.cpython-36.pyc
+__pycache__
 workfile.txt
 workfile.json
 circle.png
