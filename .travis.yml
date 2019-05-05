@@ -24,5 +24,33 @@ install:
   - Rscript binder/install.R
 
 script: 
-  - python generate_tests.py
-  - py.test tests.py
+  - python notebooks_2017/00.Installation.py
+  - python notebooks_2017/01.Introduction.py
+  - python notebooks_2017/02.Strings.py
+  - python notebooks_2017/03.Lists.py
+  - python notebooks_2017/04.Control.Flow.Tools.py
+  - python notebooks_2017/05.Modules.py
+  - python notebooks_2017/06.Input.And.Output.py
+  - python notebooks_2017/07.Errors.and.Exceptions.py
+  - python notebooks_2017/08.Classes.py
+  - python notebooks_2017/09.Iterators.py
+  - python notebooks_2017/10.Multiprocessing.py
+  - python notebooks_2017/11.Standard.Library.py
+  - python notebooks_2017/12.Matplotlib.py
+  - python notebooks_2017/13.Numpy.py
+  - python notebooks_2017/14.SciPy.py
+  - python notebooks_2017/15.Sympy.py
+  - python notebooks_2017/16.Dask.py
+  - python notebooks_2017/17.InteractiveWidgets.py
+  - python notebooks_2017/18.Pandas.Series.py
+  - python notebooks_2017/19.Pandas.DataFrame.py
+  - python notebooks_2017/20.IRMAR.py
+  - python notebooks_2017/21.Pandas.Exercises.py
+  - python notebooks_2017/22.GeoGebra.Day.py
+  - python notebooks_2017/23.Julia.Set.py
+  - python notebooks_2017/24.DaskDataframes.py
+  - python notebooks_2017/25.Seaborn.py
+  - python notebooks_2017/26.NBA.Games.py
+  - python notebooks_2018/01.CaesarCipher.py
+  - python notebooks_2018/02.Polynomial.py
+  - python notebooks_2018/03.GrayScott.py
