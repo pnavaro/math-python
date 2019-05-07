@@ -17,7 +17,6 @@ dependencies:
   - ipywidgets
   - joblib
   - jupyter
-  - jupytext
   - jupyterlab
   - lorem 
   - lxml
