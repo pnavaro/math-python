@@ -1,2 +1,4 @@
 #!/bin/bash
-jupyter nbconvert $1 --to slides --post serve
+pyfile="$1"
+jupytext --to notebook $1
+jupyter nbconvert "${pyfile%.*}.ipynb" --to slides --post serve
