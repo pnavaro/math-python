@@ -6,11 +6,11 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 1.1.1
+#       jupytext_version: 1.2.3
 #   kernelspec:
-#     display_name: Python (math-python)
+#     display_name: Python 3
 #     language: python
-#     name: math-python
+#     name: python3
 # ---
 
 # %% [markdown] {"slideshow": {"slide_type": "slide"}}
@@ -146,7 +146,7 @@ df
 # - convert df to Series containing only "mean temp" column.
 
 # %% {"slideshow": {"slide_type": "fragment"}}
-df.insert(loc=2,column='day',value=np.ones(len(df)))
+df.insert(loc=2,column='day',value=1)
 df
 
 # %% {"slideshow": {"slide_type": "slide"}}
@@ -185,6 +185,11 @@ df.tail()
 
 # %% {"slideshow": {"slide_type": "fragment"}}
 df[df.values == -999]
+
+# %%
+pd.__version__
+
+# %%
 
 # %% {"slideshow": {"slide_type": "slide"}}
 df2 = df.copy() 
@@ -242,10 +247,18 @@ s = df.resample('10A')
 s
 
 # %% {"slideshow": {"slide_type": "slide"}}
-r = df.rolling(window=200).mean().dropna()
-r
+r = df.rolling(window=120).mean().dropna()
+type(r)
+
+# %%
+?pd.Series.rolling
+
+# %%
+
+# %%
 
 # %% {"slideshow": {"slide_type": "fragment"}}
+plt.figure()
 s.plot(style='y.')
 r.plot(style='r')
 
