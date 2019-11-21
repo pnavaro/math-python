@@ -97,7 +97,7 @@ sentence()
 s = sentence()
 s
 
-s.lower()
+s.upper()
 
 s.replace(".","")
 
@@ -105,19 +105,17 @@ s.count("e")
 
 s.index("o")
 
-s[:5], s[-5:]
+s[10:15], s[:5], s[-5:]
 
 # ### Exercise
 #
-# - Use index method to get the first and the last word of the sentence.
+# - Use `index` method to get the first and the last word of the sentence.
 
 # ### String concatenation and repeat
 
 2 * s == s + s
 
-
-
-# # Open and write to file
+# # Write to file
 
 with open("sample.txt", "w") as f:
     f.write(lorem.paragraph())
@@ -144,6 +142,8 @@ data
 words = data.split()
 words[:5] # display 5 first words
 
+words[-5:] # display 5 last words
+
 # Methods available for a python list
 #
 # - `append` 
@@ -158,7 +158,7 @@ words[:5] # display 5 first words
 # - `reverse`
 # - `sort`
 #
-# To get the doc just type words.reverse (shift+TAB)
+# To get the doc just type words.`<method>` (shift+TAB)
 
 # # Loops and control flows
 #
@@ -166,26 +166,27 @@ words[:5] # display 5 first words
 
 a, b = 0, 1
 while b < 1000:
-    a, b = b, a+b
+    a, b = b, a+b # fibonacci numbers
     print(round(b/a,3), end=",")
 
 # ## For
 
 words = sentence().split()
+
 for word in words:
-    print(word, len(word))
+    print(f"{word} \t {len(word)}")
 
 for i in range(5):
-    print(i, words[i], len(words[i]))
+    print(f"{words[i]} \t {len(words[i])}")
 
 for i,w in enumerate(words):
-    print(i, w, len(w))
+    print(f"{i} \t {w} \t {len(w)}")
 
 for i,w in enumerate(words[::-1]):
-    print(i, w, len(w))
+    print(f"{i} \t {w} \t {len(w)}")
 
 for i,w in enumerate(sorted(words)):
-    print(i, w, len(w))
+    print(f"{i} \t {w} \t {len(w)}")
 
 # # If else
 
@@ -337,7 +338,7 @@ p = make_polynom(*coeffs_list)
 p(0),p(1)
 
 coeffs_dict = dict(a=1, b=2, c=3)
-coeffs
+coeffs_dict
 
 p = make_polynom(**coeffs_dict)
 p(0),p(1)
@@ -379,6 +380,7 @@ print(pi)
 #
 # Loop over sequences simultaneously.
 
+L1, L2 = [1,2,3], [3,4,5]
 for (x, y) in zip(L1, L2):
     print (x, y, '--', x + y)
 
@@ -516,7 +518,7 @@ gcd(12,16)
 
 P = [ 1, 5, 6, 8]
 Q = [ -2, 1, 3]
-     
+
 
 # +
 from numpy import poly1d
@@ -528,5 +530,3 @@ q = poly1d(Q[::-1])
 p + q
 
 p * q
-
-
