@@ -28,10 +28,10 @@
 # brew install python
 # pip3 install jupyter jupytext
 # ```
-# - Linux: Use packaging system and install missing ones with 
+# - Linux: Use packaging system and install missing ones with pip with `--user` flag
 # ```
 # apt-get install python3-numpy
-# pip3 install --user jupyter jupytext
+# python3 -m pip install --user jupyter jupytext
 # ```
 
 # + {"slideshow": {"slide_type": "fragment"}, "cell_type": "markdown"}
@@ -42,16 +42,9 @@
 # ```
 # git clone https://github.com/pnavaro/math-python.git
 # ```
-# - Or download the zip archive on github
+# - Or download the zip archive: https://github.com/pnavaro/math-python/archive/master.zip
 
-# + {"slideshow": {"slide_type": "fragment"}, "cell_type": "markdown"}
-# ### Run the jupyter notebook
-#
-# ```
-# jupyter notebook
-# ```
-# -
-
+# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
 # # Jupyter Notebook
 #
 #
@@ -64,7 +57,8 @@
 # The Jupyter Notebook is an interactive environment for writing and running code. 
 # The notebook is capable of running code in [a wide range of languages](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels). 
 # However, each notebook is associated with Python3 kernel.
-#
+
+# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
 # ## Code cells allow you to enter and run code
 #
 # **Make a copy of this notebook by using the File menu.**
@@ -75,9 +69,8 @@
 #
 # * `Alt-Enter` runs the current cell and inserts a new one below.
 # * `Ctrl-Enter` run the current cell and enters command mode.
-#
-#
-#
+
+# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
 # ## Managing the Kernel
 #
 # Code is run in a separate process called the Kernel.  The Kernel can be interrupted or restarted.  Try running the following cell and then hit the <button class='btn btn-default btn-xs'><i class='icon-stop fa fa-stop'></i></button> button in the toolbar above.
@@ -89,9 +82,8 @@
 # * Run All
 # * Run All Above
 # * Run All Below
-#
-#
-#
+
+# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
 # ## Restarting the kernels
 #
 # The kernel maintains the state of a notebook's computations. You can reset this state by restarting the kernel. This is done by clicking on the <button class='btn btn-default btn-xs'><i class='fa fa-repeat icon-repeat'></i></button> in the toolbar above.
@@ -118,5 +110,4 @@
 import sys
 print(sys.executable)
 # -
-
 
