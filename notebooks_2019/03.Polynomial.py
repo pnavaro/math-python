@@ -1,20 +1,21 @@
 # ---
 # jupyter:
 #   jupytext:
+#     cell_metadata_json: true
 #     comment_magics: false
 #     formats: ipynb,py:light
 #     text_representation:
 #       extension: .py
 #       format_name: light
-#       format_version: '1.4'
-#       jupytext_version: 1.1.3
+#       format_version: '1.5'
+#       jupytext_version: 1.3.0
 #   kernelspec:
-#     display_name: Python 3.7
+#     display_name: Python 3
 #     language: python
 #     name: python3
 # ---
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Recursive Call
 
 # +
@@ -39,7 +40,7 @@ def gcd(x, y):
 gcd(12,16)
 
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # ### Exercise: Polynomial derivative
 # - A Polynomial is represented by a Python list of its coefficients.
 #     [1,5,-4] => $1+5x-4x^2$
@@ -49,7 +50,7 @@ gcd(12,16)
 # diff([-6,5,-3,-4,3,-4],3) = [-24, 72, -240]
 # ```
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Classes
 # - Classes provide a means of bundling data and functionality together.
 # - Creating a new class creates a **new type** of object.
@@ -59,7 +60,7 @@ gcd(12,16)
 # - Python classes provide the class **inheritance** mechanism.
 #
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Use class to store data
 #
 # - A empty class can be used to bundle together a few named data items. 
@@ -76,7 +77,7 @@ p.coeffs = [1,-2,3]
 # + {"slideshow": {"slide_type": "fragment"}}
 p.__dict__
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # namedtuple
 
 # + {"slideshow": {"slide_type": "fragment"}}
@@ -121,7 +122,7 @@ p.degree(), p.coeffs
 # 6
 # ```
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Convert method to attribute
 #
 # Use the `property` decorator 
@@ -147,7 +148,7 @@ p.degree
 # + {"slideshow": {"slide_type": "fragment"}}
 p
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # The new Python 3.7 DataClass
 
 # + {"slideshow": {"slide_type": "fragment"}}
@@ -171,7 +172,7 @@ q.coeffs
 
 print(q)
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Method Overriding
 # - Every Python classes has a `__repr__()` method used when you call `print()` function.
 
@@ -213,28 +214,33 @@ print(q)
 # +1 +2x^1 +3x^2 +4x^3 +5x^4
 # ```
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
-# # Use `class` as a Function.
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
+# # Use `class` as a Function. The `__call__` method.
 
 # +
-class F:
-    " Create a function f(x) = a * x + b "
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-    def __call__(self, x):
-        return self.a * x + self.b
+class Polynomial:
+    """Simple example class with method overriding """
+
+    def __init__(self, coeffs):
+        self.coeffs = coeffs
+        
+    def __repr__(self):
+        
+        return "".join([f"{c:+d}x^{e+1}" for e,c in enumerate(self.coeffs[1:])])
+
+    @property
+    def degree(self):
+        return len(self.coeffs)-1
     
-a, b = 2, 1
-f = F(a, b)
-f(3) # computes a * 3 + b
+    def __call__(self, x):
+        return sum( c*x**e for e,c in enumerate(self.coeffs))
+    
+q = Polynomial([1,2,3,4,5])
+print(q)
+# computes q(3)
+q(3)
 
-# + {"slideshow": {"slide_type": "fragment"}, "cell_type": "markdown"}
-# ### Exercise
-#
-# Add the method `__call__`to the class `Polynomial`
-
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Inheritance
 
 # + {"slideshow": {"slide_type": "fragment"}}
@@ -276,7 +282,7 @@ Pierre.age
 print(Pierre)
 
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # ### Exercise: Rectangle and Square
 # - Create two classes to represent a Square and a Rectangle.
 # - Add a method to compute Area
@@ -295,7 +301,7 @@ print(Pierre)
 # ```
 #
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Private Variables and Methods
 
 # + {"slideshow": {"slide_type": "fragment"}}
@@ -330,10 +336,10 @@ object3._DemoClass__private_method()
 object3.public_method
 
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Operators Overriding 
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # ## Rational example
 
 # + {"slideshow": {"slide_type": "fragment"}}
@@ -379,7 +385,7 @@ r1 = Rational(2,3)
 r2 = Rational(3,4)
 r1+r2, r1-r2, r1*r2, r1/r2
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # ### Exercise 
 # Improve the class Polynomial by implementing operations:
 # - Overrides '==' operator (__eq__)
@@ -435,7 +441,7 @@ for i1, i2 in zip_longest(l1, l2, fillvalue=0):
     
 zip_longest
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Iterators
 # Most container objects can be looped over using a for statement:
 
@@ -463,7 +469,7 @@ for char in "123":
 for line in open("../binder/environment.yml"):
     print(line.strip(), end=',')
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # - The `for` statement calls `iter()` on the container object. 
 # - The function returns an iterator object that defines the method `__next__()`
 # - To add iterator behavior to your classes: 
@@ -508,7 +514,7 @@ for char in rev:
     print(char, end='')
 
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Generators
 # - Generators are a simple and powerful tool for creating iterators.
 # - Write regular functions but use the yield statement when you want to return data.
@@ -533,7 +539,7 @@ def reverse(data): # Python 3.6
 for char in reverse('bulgroz'):
      print(char, end='')
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Generator Expressions
 #
 # - Use a syntax similar to list comprehensions but with parentheses instead of brackets.
@@ -547,7 +553,7 @@ iterateur_on_data = ( i**2 for i in data)
 for x in iterateur_on_data:
     print(x)
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # ### Exercise
 #
 # The [Chebyshev polynomials](https://en.wikipedia.org/wiki/Chebyshev_polynomials) of the first kind are defined by the recurrence relation
