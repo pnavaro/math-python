@@ -2,20 +2,21 @@
 # ---
 # jupyter:
 #   jupytext:
+#     cell_metadata_json: true
 #     comment_magics: false
 #     formats: ipynb,py:light
 #     text_representation:
 #       extension: .py
 #       format_name: light
-#       format_version: '1.4'
-#       jupytext_version: 1.2.4
+#       format_version: '1.5'
+#       jupytext_version: 1.3.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
 #     name: python3
 # ---
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # First program
 #
 # - Print out the string "Hello world!" and its type.
@@ -29,7 +30,7 @@ print(type(s),s)
 a = 6625
 print(type(a),a)
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Python Types
 # - Most of Python types are classes, typing is dynamic.
 # - ; symbol can be used to split two Python commands on the same line.
@@ -42,7 +43,7 @@ s = None; print(type(s))
 s = 1.0j; print(type(s))
 s = type(type(s)); print(type(s))
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Calculate with Python
 
 # + {"slideshow": {"slide_type": "fragment"}}
@@ -61,7 +62,7 @@ print(x*10//3)  # floor division discards the fractional part
 # + {"slideshow": {"slide_type": "fragment"}}
 print( x % 8) # the % operator returns the remainder of the division
 
-# + {"slideshow": {"slide_type": "slide"}, "cell_type": "markdown"}
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Multiple Assignment
 # - Variables can simultaneously get new values. 
 # - Expressions on the right-hand side are all evaluated first before assignments take place. 
@@ -486,6 +487,21 @@ def gcd(x, y):
         return gcd(y % x, x)
 
 gcd(12,16)
+
+# # Assignment, Copy and Reference
+
+a = [0, 1, 2, 3, 4]
+b = a
+print("b = ",b)
+b[1]= 20        # Change one value in b
+print("a = ",a) # Y
+
+# **b is a reference to a, they occupy same space memory**
+
+b = a[:] # assign a slice of a and you create a new list (similar to a.copy())
+b[2]=10
+print("b = ",b)
+print("a = ",a)   
 
 # ## Exercise: Polynomial
 #
