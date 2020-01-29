@@ -15,6 +15,18 @@
 #     name: python3
 # ---
 
+# + {"slideshow": {"slide_type": "slide"}}
+# %matplotlib inline
+import numpy as np
+from matplotlib import pyplot as plt
+plt.rcParams["figure.figsize"] = (10,6)
+
+# + [markdown] {"slideshow": {"slide_type": "fragment"}}
+# - The first line is specific to jupyter notebook, figures are displayed under cell
+# - numpy module is always imported like this, every numpy command begin by np.
+# - pyplot is a matplotlib subpackage similar to the matlab interface
+# - We set the size of all figures to 10cm x 6cm
+
 # + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # What provide Numpy to Python ?
 #
@@ -103,7 +115,7 @@ print(a,b,c)
 # - arrays shape must match
 
 # + {"slideshow": {"slide_type": "fragment"}}
-a*b,a+b
+a*b, a+b
 
 # + {"slideshow": {"slide_type": "fragment"}}
 5*a, 5+a
@@ -195,25 +207,30 @@ a[::2], a[::-1]
 # ### Exercise: 
 # - Compute derivative of $f(x) = \sin(x)$ with finite difference method.
 # $$
-#     \frac{\partial f}{\partial x} \sim \frac{f(x+dx)-f(x)}{dx}
+#     \left(\frac{\partial f}{\partial x} \right)_{i+1/2} \sim \frac{f(x_{i+1})-f(x_i)}{dx}
 # $$
+# derivatives values are centered in-between sample points.
+#
 # - Compute integral using trapezoidal rule with $f(x) = e^{-x^2}$
 #
 # $$
 # \int_{-6}^{6} f(x)\,dx = \frac{dx}{2} \sum_{k=1}^{n-1} \left(f(x)+f(x+dx) \right)
 # $$
 #
-# derivatives values are centered in-between sample points.
-
-# + {"slideshow": {"slide_type": "fragment"}}
-x, dx = np.linspace(0,4*np.pi,100, retstep=True)
-y = np.sin(x)
-plt.plot(x, y)
+#
 
 # + {"slideshow": {"slide_type": "slide"}}
 # %matplotlib inline
 import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = [12.,8.] # Increase plot size
+
+# + {"slideshow": {"slide_type": "fragment"}}
+x, dx = np.linspace(0,4*np.pi,100, retstep=True)
+y = np.sin(x)
+plt.plot(x, y);
+
+# + {"slideshow": {"slide_type": "slide"}}
+
 plt.plot(x, np.cos(x),'b')
 plt.title(r"$\rm{Derivative\ of}\ \sin(x)$");
 
@@ -358,7 +375,6 @@ print("iterations = ",istep)
 plt.title("Temperature")
 plt.contourf(X, Y, T)
 plt.colorbar()
-plt.show()
 
 
 # + [markdown] {"slideshow": {"slide_type": "slide"}}
@@ -405,11 +421,6 @@ with h5.File('test.h5','w') as f:
 with h5.File('test.h5','r') as f:
     for field in f.keys():
         print(field+':',f.get(field))
-# -
-
-
-f = h5.File('test.h5','r')
-f['y'].value
 
 
 # + [markdown] {"slideshow": {"slide_type": "slide"}}
@@ -699,31 +710,6 @@ ar = a[np.newaxis, :]   # row matrix
 np.all(np.tile(a, (n,1)).T * np.tile(a, (n,1)) == ac * ar)
 
 # + [markdown] {"slideshow": {"slide_type": "slide"}}
-# # Numpy Matrix
-#
-# Specialized 2-D array that retains its 2-D nature through operations. It has certain special operators, such as $*$ (matrix multiplication) and $**$ (matrix power).
-
-# + {"slideshow": {"slide_type": "fragment"}}
-m = np.matrix('1 2; 3 4') #Matlab syntax
-m
-
-# + {"slideshow": {"slide_type": "fragment"}}
-a = np.matrix([[1, 2],[ 3, 4]]) #Python syntax
-a
-
-# + {"slideshow": {"slide_type": "slide"}}
-a = np.arange(1,4)
-b = np.mat(a) # 2D view, no copy!
-b, np.may_share_memory(a,b)
-
-# + {"slideshow": {"slide_type": "fragment"}}
-a = np.matrix([[1, 2, 3],[ 3, 4, 5]])
-a * b.T # Matrix vector product
-
-# + {"slideshow": {"slide_type": "fragment"}}
-m * a # Matrix multiplication
-
-# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # ## StructuredArray using a compound data type specification
 
 # + {"slideshow": {"slide_type": "fragment"}}
@@ -753,18 +739,6 @@ data_rec.age
 # - This does require some experience.
 # - NumPy’s array operations are designed to make this possible.
 
-# + {"slideshow": {"slide_type": "slide"}}
-# %matplotlib inline
-import numpy as np
-from matplotlib import pyplot as plt
-plt.rcParams["figure.figsize"] = (10,6)
-
-# + [markdown] {"slideshow": {"slide_type": "fragment"}}
-# - The first line is specific to jupyter notebook, figures are displayed under cell
-# - numpy module is always imported like this, every numpy command begin by np.
-# - pyplot is a matplotlib subpackage similar to the matlab interface
-# - We set the size of all figures to 10cm x 6cm
-
 # + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # initialize a random normal vector with 100 values
 
@@ -779,7 +753,7 @@ rng = np.random.RandomState(42)
 X = rng.normal(mu, sigma, 100)
 X
 
-# + {"slideshow": {"slide_type": "slide"}}
+# + {"slideshow": {"slide_type": "fragment"}}
 b = np.array([1.0, 2.0]) # numpy array from python list
 y = np.random.normal(size=n) +  b[0] + b[1] * X # always element by element operations
 
@@ -805,34 +779,37 @@ X = X[:,np.newaxis] # scikit-learn is waiting for a Matrix
 model.fit(X, y)
 print('Coefficient: \n', model.coef_)
 model.intercept_
-# -
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Linear regression with the classic formula
 #
 # $$
 # w = (X^tX)^{-1} X^tY
 # $$
 
-# +
+# + {"slideshow": {"slide_type": "fragment"}}
 if ~np.all( X[:,0] == 1.0):
     X = np.insert(X, 0, 1, axis=1) # insert a first column of ones 
 
 X[:10] # first ten lines
-# -
 
+# + {"slideshow": {"slide_type": "fragment"}}
 X_sq_reg_inv = np.linalg.inv(X.T @ X) # inv(X'X)
 w = X_sq_reg_inv.dot(X.T).dot(y)  
 # w = (X_sq_reg_inv @ X.T) @ y  
 # w = np.dot(np.dot(X_sq_reg_inv, X.T), y)
 
+# + [markdown] {"slideshow": {"slide_type": "slide"}}
 # # Calculate weights by least squares  (using Moore-Penrose pseudoinverse)
 #
 #
 
+# + {"slideshow": {"slide_type": "fragment"}}
 U, S, V = np.linalg.svd(X.T.dot(X))
 X_sq_reg_inv = V.T.dot(np.diag(1/S)).dot(U.T)
 w = X_sq_reg_inv.dot(X.T).dot(y)
 w
 
+# + {"slideshow": {"slide_type": "fragment"}}
 w = np.linalg.pinv(X).dot(y)
 w
 
