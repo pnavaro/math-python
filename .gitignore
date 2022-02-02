@@ -106,3 +106,4 @@ data/nba-*.csv
 notebooks_2018/movie.gif
 notebooks_2019/01.Installation.ipynb
 notebooks_2019/02.Bases.ipynb
+notebooks_2022/fibonacci.py
